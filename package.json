@@ -15,7 +15,8 @@
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
-    "turbo": "latest"
+    "turbo": "latest",
+    "webpack": "^5.75.0"
   },
   "engines": {
     "node": ">=14.0.0"
