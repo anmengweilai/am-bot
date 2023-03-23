@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "bin": {
-    "chu-scripts": "bin/am-scripts.js"
+    "am-scripts": "bin/am-scripts.js"
   }
 }
