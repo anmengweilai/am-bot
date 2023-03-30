@@ -1,9 +1,7 @@
-// import * as logger from ;
-import spawn from '@anmeng/utils/compiled/cross-spawn';
+import { crossSpawn, logger } from '@anmeng/utils';
 import type { SpawnSyncOptions } from 'child_process';
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
-import { logger } from '@anmeng/utils';
 import { PATHS } from './constants';
 
 export function getPkgs(opts?: { base?: string }): string[] {
@@ -67,7 +65,7 @@ export function setExcludeFolder(opts: {
 }
 
 export function spawnSync(cmd: string, opts: SpawnSyncOptions) {
-  const result = spawn.sync(cmd, {
+  const result = crossSpawn.sync(cmd, {
     shell: true,
     stdio: 'inherit',
     ...opts,

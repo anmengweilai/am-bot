@@ -1,3 +1,4 @@
+import { chalk } from '@anmeng/utils';
 import 'zx/globals';
 
 const msgPath = process.argv[2];

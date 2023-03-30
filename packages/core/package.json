@@ -1,0 +1,30 @@
+{
+  "name": "@am-bot/core",
+  "version": "0.0.1",
+  "description": "@am-bot/core",
+  "homepage": "https://github.com/anmengweilai/am-bot/tree/master/packages/core#readme",
+  "bugs": "https://github.com/anmengweilai/am-bot/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anmengweilai/am-bot"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "am-scripts father build",
+    "build:deps": "am-scripts bundleDeps",
+    "build:tsc": "pnpm tsc",
+    "dev": "am-scripts father dev",
+    "dev:tsc": "pnpm tsc --watch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "anmeng <chumengyouying@outlook.com> (https://github.com/anmengweilai)"
+  ]
+}
